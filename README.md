@@ -1,4 +1,5 @@
-# mw-2017 remote master
+# mw-2017 local develop
+
 Class project for Factory Modern Web course
 
 Yippee!
