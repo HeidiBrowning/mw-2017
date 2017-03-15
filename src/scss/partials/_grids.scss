@@ -1,0 +1,27 @@
+/* ------------- GRIDS ------------- */
+[class^="grid"]
+{
+	@include flex(wrap, space-between);
+	margin: 0;
+	padding: 0;
+
+	> li
+	{
+		list-style: none;
+		width: 100%;
+
+		@include min-up(480px) {
+			width: calc(50% - (4rem / 2));
+		}
+
+		@include min-up(768px) {
+			width: calc(33.333% - (5rem / 3));
+		}
+	}
+}
+.grid_4 > li
+{
+	@include min-up(960px) {
+		width: calc(25% - (4rem / 3));
+	}
+}

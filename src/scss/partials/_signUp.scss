@@ -1,0 +1,43 @@
+/*----------- Sign Up -----------*/
+.signUp
+{
+	padding: 141px 92px 183px;
+	background: #cf563b url('../../img/hero.jpg') no-repeat top center;
+	color: #fff;
+
+	.intro_paragraph
+	{
+		color: #fff;
+		text-align: left;
+		width: calc(100% - 350px);
+		margin: 0;
+		display: inline-block;
+		vertical-align: middle;
+
+		span
+		{
+			display: block;
+		}
+	}
+
+	a.button
+	{
+		display: inline-block;
+		vertical-align: middle;
+		float: right;
+		border: solid 3px #fff;
+		padding: 12px 32px;
+		text-transform: uppercase;
+		font: bold 30px/1.2 $sans-serif;
+		color: #fff;
+		background-color: #cf563b;
+		text-decoration: none;
+
+		&::after
+		{
+			content: "";
+			display: block;
+			clear: both;
+		}
+	}
+}

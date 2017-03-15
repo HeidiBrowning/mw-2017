@@ -1,0 +1,51 @@
+/*------------- PAGE HEADER -------------*/
+.page_header
+{
+	position: relative;
+	width: 100%;
+	max-width: 1190px;
+	@include flex(wrap, space-between);
+	padding: 1.125rem 2.188rem;
+	background-color: rgba(207, 86, 59, .9);
+
+	@include min-up(768px) { 
+		position: fixed;
+		top: 0;
+		width: 98%;
+		z-index: 200;
+	}
+}
+
+/* Main Menu */
+.main-nav {
+	width: calc(100% - 250px);
+	max-width: 630px;
+
+	.top_level
+	{
+		margin: 1.125rem 0 0;
+		padding: 0;
+		@include flex();
+		
+		> li 
+		{
+			list-style: none;
+			padding: 1rem;
+
+			> a
+			{ 
+				color: #fff;
+				padding: .3em 0;
+				font: 500 1.125rem/1.2 sans-serif; 
+				border-bottom: solid 3px transparent;
+				text-decoration: none;
+				text-transform: uppercase;
+
+				&:hover, &:focus
+				{
+					border-bottom-color: #fff;
+				}
+			}
+		}
+	}
+}

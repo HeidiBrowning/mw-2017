@@ -1,0 +1,33 @@
+/* ------------- Intro ------------- */
+
+.intro
+{
+	background: #cf563b url('../../img/hero.jpg') no-repeat top center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	padding: 14rem 2rem 12.563rem;
+
+	.page-title
+	{
+		font-size: 5.75rem;
+		line-height: 1.2;
+		font-weight: 100;
+		margin: 0 0 0.313rem;
+	}
+
+	.intro_paragraph
+	{
+		color: #fff;
+		font-size: 1.5rem;
+		line-height: 1.2;
+		margin-bottom: 1.375rem;
+
+		&::after
+		{
+			content: "</>";
+			margin-top: 1.375rem;
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,82 @@
+/*------------- CoLearners -------------*/
+.colearners
+{
+	background-color: #fafafa;
+	padding: 91px 84px;
+
+	.student
+	{
+		text-align: center;
+		font-weight: bold;
+		margin: 0 0 3rem;
+
+		.photo
+		{
+			max-width: 100%;
+			height: auto !important;
+			border-radius: 50%;
+			opacity: .7;
+
+			&:hover
+			{
+				opacity: 1;
+			}
+		}
+
+		.name
+		{
+			font-size: 1.375rem;
+			line-height: 1.1;
+			font-weight: 500;
+			display: block;
+			color: #444444;
+		}
+
+		.social
+		{
+			margin: 0;
+			padding: 0;
+
+			> li
+			{
+				list-style: none;
+				margin: 0;
+				display: inline-block;
+				margin: 0 .4rem;
+				
+				> a
+				{
+					text-decoration: none;
+					font-size: 1.375rem;
+					color: #444444;
+					opacity: .6;
+					
+					&:hover, &:focus
+					{
+						opacity: 1;
+					}
+
+					&::after
+					{
+						font-family: fontAwesome, sans-serif;
+					}
+				}
+
+				&.twitter a::after
+				{
+					content: "\f099";
+				}
+			
+				&.facebook a::after
+				{
+					content: "\f09a";
+				}
+
+				&.website a::after
+				{
+					content: "\f0ac";
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+/*-------------- Meet the Instructor --------------*/
+.instructor
+{
+	padding: 20% 84px 10%;
+	background: #cf563b url('../../img/instructor.jpg') no-repeat top center;
+	color: #fff;
+
+	.content
+	{
+		width: 40%;
+
+		h2
+		{
+			text-align: left;
+			color: #fff;
+			font: 300 18px/2.9 $sans-serif;
+			margin-bottom: 15px;
+		}
+
+		h3
+		{
+			color: #fff;
+			font: 600 36px/1.2 $sans-serif;
+		}
+
+		h4
+		{
+			color: #fff;
+			margin-bottom: 27px;
+			font: 500 22px/1.1 $sans-serif;
+		}
+	}
+}

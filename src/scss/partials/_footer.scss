@@ -1,0 +1,23 @@
+/*----------- Footer -----------*/
+.site_footer
+{
+	padding: 33px 32px;
+	background-color: rgba(207, 86, 59, .9);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+
+	img,
+	.address
+	{
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 0 0 40px;
+	}
+	
+	.address span
+	{
+		display: block;
+	}
+}

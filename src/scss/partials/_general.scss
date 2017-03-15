@@ -1,0 +1,78 @@
+*, *::after, *::before
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	line-height: 1.4;
+	font-family: $sans-serif;
+	color: #777;
+	background-color: #f3f3f3;
+	margin: 0;
+}
+
+section
+{
+	position: relative;
+}
+
+.wrapper
+{
+	width: 98%;
+	max-width: 1190px;
+	background-color: #fff;
+	position: relative;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+/*------------- Fonts -------------*/
+h2
+{
+	color: #777;
+	font-size: 1.75rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 0 69px; 
+}
+
+h3
+{
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1rem;
+	color: #797979;
+	margin: 0;
+}
+
+h4
+{
+	margin: 0;
+}
+
+p {
+	margin: 0 0 1rem;
+
+	.intro_paragraph
+	{
+		font-size: 2rem;
+		line-height: 1.8;
+		font-weight: 300;
+		color: #C3BFBF;
+		text-align: center;
+		max-width: 800px;
+		margin: 0 auto 1em;
+	}
+}
+
+.screen-reader-text
+{
+    position: absolute;
+    text-indent: 100%;
+    left: -9999px;
+    top: -9999px;
+    color: #000;
+    background-color: #fff;
+}

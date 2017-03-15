@@ -1,11 +1,24 @@
-$red: #00ff66;
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,700');
 
-h1 {
-	color: $red;
-}
+/*//
+// Variables
+//*/
+$sans-serif: "Roboto", sans-serif;
 
-.myclass {
-	p {
-		color: $red;
-	}
-}
+
+/*//
+// Partials
+//*/
+@import 'partials/mixins';
+@import 'partials/general';
+@import 'partials/grids';
+
+@import 'partials/header';
+@import 'partials/footer';
+ 
+@import 'partials/intro';
+@import 'partials/description';
+@import 'partials/colearners';
+@import 'partials/instructor';
+@import 'partials/testimonial';
+@import 'partials/signUp';
