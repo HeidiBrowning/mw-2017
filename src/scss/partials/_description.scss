@@ -6,22 +6,24 @@
 
 	p {
 		margin: 0 0 3.313rem;
-	}
 
-	 .intro_paragraph
-	{
-		margin-bottom: 4.813rem;
-		text-align: center;
-
-		&:after
+		&.intro_paragraph
 		{
-			content: "";
-			height: 30px;
-			width: 100%;
-			background: url(../../img/divider.png) no-repeat top center;
-			display: block;
-			margin-top: 4.813rem;
-			margin-bottom: 7.938rem;
+			margin-bottom: 4.813rem;
+			text-align: center;
+
+			&:after
+			{
+				content: "";
+				height: 30px;
+				width: 100%;
+				background: url(../../img/divider.png) no-repeat top center;
+				display: block;
+				margin-top: 4.813rem;
+				margin-bottom: 7.938rem;
+			}
 		}
 	}
+
+	 
 }

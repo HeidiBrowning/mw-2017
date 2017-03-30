@@ -30,6 +30,32 @@
 	@media only screen and (min-width: $min) and (max-width: $max) { @content; }
 }
 
+
+@mixin list-reset {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+@mixin vertical-align($val: 47%) {
+	// unset
+	@if $val == 'none' {
+	    top: auto;
+      -webkit-transform: none;
+         -moz-transform: none;
+          -ms-transform: none;
+              transform: none;
+
+   	} @else {
+        position: relative;
+        top: $val;
+        -webkit-transform: translateY(-50%);
+           -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+   	}
+}
+
 /*
 	Personal Usage Note:
 	max-down always ends with #.999 or #.#999 >> so 47.999em instead of 48em

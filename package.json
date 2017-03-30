@@ -17,7 +17,16 @@
   },
   "homepage": "https://github.com/HeidiBrowning/mw-2017#readme",
   "devDependencies": {
+    "browsersync": "0.0.1-security",
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "node-notifier": "^5.1.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.8"
   }
 }

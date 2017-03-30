@@ -10,6 +10,8 @@ $sans-serif: "Roboto", sans-serif;
 // Partials
 //*/
 @import 'partials/mixins';
+@import 'partials/normalize';
+
 @import 'partials/general';
 @import 'partials/grids';
 
