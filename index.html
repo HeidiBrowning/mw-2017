@@ -7,7 +7,7 @@
   <title>Modern Web Project</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class>
 	<div class="wrapper">
 		<header id="page_header" class="page_header">
 			<a href="#intro" class="site_logo"><img src="img/factory-logo.png"></a>
@@ -19,6 +19,15 @@
 					<li><a href="#signUp">Sign Up</a></li>
 				</ul>
 			</nav>
+			<button class="menu-btn js-menu-btn"><span>Menu</span></button>
+			<script>
+				var menuBtn = document.querySelector('.js-menu-btn');
+				var body = document.querySelector('body');
+
+				menuBtn.addEventListener('click', function() {
+					body.classList.toggle('nav-shown');
+				});
+			</script>
 		</header>
 
 		<section id="intro" class="intro">

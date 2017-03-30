@@ -70,3 +70,13 @@
 	flex-wrap: $wrap;
 	justify-content: $justify;
 }
+
+
+
+
+@mixin hide-text {
+	display: block; 	// always needed
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
+}

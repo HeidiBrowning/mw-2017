@@ -1,14 +1,15 @@
 /*------------- PAGE HEADER -------------*/
 .page_header
 {
-	position: relative;
+  	@include clearfix;
 	width: 100%;
 	max-width: 1190px;
-	@include flex(wrap, space-between);
-	padding: 1.125rem 2.188rem;
 	background-color: rgba(207, 86, 59, .9);
 
 	@include min-up(768px) { 
+		@include flex(wrap, space-between);
+		position: relative;
+		padding: 1.125rem 2.188rem;
 		position: fixed;
 		top: 0;
 		width: 98%;
@@ -16,19 +17,112 @@
 	}
 }
 
-/* Main Menu */
-.main-nav {
-	width: calc(100% - 250px);
-	max-width: 630px;
+/* ------- Main Menu ------- */
+$nav-switch: 768px;
 
+.menu-btn {
+	position: absolute;
+	top: 0.75rem;
+	right: 1.25rem;
+	z-index: 999;
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 41px;
+	height: 36px;
+	border: none;
+	background: none;
+	outline: none;
+	cursor: pointer;
+  
+	// Hidden at larger screen
+	@include min-up($nav-switch) {
+		display: none;
+	}
+
+	span {
+    	@include hide-text;
+		position: relative;
+		top: 0;
+		margin: 0 auto;
+		width: 30px;
+		height: 3px;
+		background: #FFF;
+		overflow: hidden;
+		opacity: 1;
+		transition: all 0.1s ease-out;
+
+		.nav-shown & {
+			opacity: 0;
+			transform: scale(0);
+		}
+	}
+
+	&::before, &::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		width: 30px;
+		height: 3px;
+		background: #FFF;
+		transition: all 0.1s ease-out;
+	}
+
+	&::before {
+		top: 8px;
+
+		.nav-shown & {
+			top: 18px;
+			transform: rotate(135deg);
+		}
+	}
+
+	&::after {
+		bottom: 7px;
+
+		.nav-shown & {
+			bottom: 15px;
+			transform: rotate(-135deg);
+		}
+	}
+}
+
+.main-nav {
+	position: absolute;
+	bottom: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.33);
+	transform: translateY(0%);
+	transition: transform 0.25s ease-out;
+
+	// JS button adds/removes this class
+	.nav-shown & {
+		transform: translateY(100%);
+	}
+
+	@include min-up($nav-switch) {
+		position: relative;
+		width: calc(100% - 250px);
+	    position: static;
+	    transform: translateY(0%) !important; // always reset on larger screens
+	    transition: none; // override transition between break points
+	    background-color: transparent;
+	}
 	.top_level
 	{
 		margin: 1.125rem 0 0;
 		padding: 0;
-		@include flex();
-		
+
+		@include min-up($nav-switch) {
+			@include flex();
+		}
+			
 		> li 
 		{
+			display: block;
+			text-align: center;
 			list-style: none;
 			padding: 1rem;
 
