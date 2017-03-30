@@ -1,17 +1,23 @@
 /*---------- Testimonial ----------*/
 .testimonial
 {
-	padding: 170px 84px 111px;
+	padding: 2rem;
 	background: #fff;
 	color: #aaa;
 	text-align: center;
+	@include min-up(768px) { 
+		padding: 170px 84px 111px;
+	}
 
 	.intro_paragraph
 	{
 		color: #e66244;
-		font: 300 italic 48px/1.3 $sans-serif;
+		font: 300 italic 28px/1.3 $sans-serif;
 		max-width: 903px;
 		margin: 0 auto 74px;
+		@include min-up(768px) { 
+			font-size: 48px;
+		}
 	}
 	.credit 
 	{

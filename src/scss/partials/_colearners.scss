@@ -2,7 +2,10 @@
 .colearners
 {
 	background-color: #fafafa;
-	padding: 91px 84px;
+	padding: 2rem;
+	@include min-up(768px) {
+		padding: 91px 84px;
+	}
 
 	.student
 	{

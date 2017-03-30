@@ -6,6 +6,26 @@
   <script src="https://use.fontawesome.com/486ea60fc3.js"></script>
   <title>Modern Web Project</title>
   <link rel="stylesheet" href="assets/css/style.css">
+
+<!-- js -->
+<script src="assets/js/classie.js"></script>
+  <script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 120,
+                header = document.querySelector(".page_header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
 </head>
 <body class>
 	<div class="wrapper">
@@ -72,7 +92,7 @@
 
 			<ul class="grid_4">
 				<li class="student">
-					<img src="img/colearner-f1.jpg" class="photo" width="220px" height="220px">
+					<img src="img/colearner-m1.jpg" class="photo" width="220px" height="220px">
 					<p class="name">David Bolt</p>
 					<ul class="social">
 						<li class="twitter">
@@ -96,8 +116,53 @@
 					</ul>
 				</li>
 				<li class="student">
+					<img src="img/colearner-m2.jpg" class="photo" width="220px" height="220px">
+					<p class="name">Ritaban Chowdhury</p>
+					<ul class="social">
+						<li class="twitter">
+							<a href="http://twitter.com"><span class="screen-reader-text">Ritaban's Twitter</span></a>
+						</li>
+					</ul>
+				</li>
+				<li class="student">
+					<img src="img/colearner-m1.jpg" class="photo" width="220px" height="220px">
+					<p class="name">Timothy Haines</p>
+					<ul class="social">
+						<li class="twitter">
+							<a href="http://twitter.com"><span class="screen-reader-text">Timothy's Twitter</span></a>
+						</li>
+					</ul>
+				</li>
+				<li class="student">
+					<img src="img/colearner-f2.jpg" class="photo" width="220px" height="220px">
+					<p class="name">Pam Henson</p>
+					<ul class="social">
+						<li class="twitter">
+							<a href="http://twitter.com"><span class="screen-reader-text">Pam's Twitter</span></a>
+						</li>
+					</ul>
+				</li>
+				<li class="student">
 					<img src="img/colearner-f1.jpg" class="photo" width="220px" height="220px">
-					<p class="name">David Bolt</p>
+					<p class="name">Danielle Kendra</p>
+					<ul class="social">
+						<li class="twitter">
+							<a href="http://twitter.com"><span class="screen-reader-text">Danielle's Twitter</span></a>
+						</li>
+					</ul>
+				</li>
+				<li class="student">
+					<img src="img/colearner-m1.jpg" class="photo" width="220px" height="220px">
+					<p class="name">Michael Reick</p>
+					<ul class="social">
+						<li class="twitter">
+							<a href="http://twitter.com"><span class="screen-reader-text">Michael's Twitter</span></a>
+						</li>
+					</ul>
+				</li>
+				<li class="student">
+					<img src="img/colearner-m2.jpg" class="photo" width="220px" height="220px">
+					<p class="name">Christopher Simmons</p>
 					<ul class="social">
 						<li class="twitter">
 							<a href="http://twitter.com"><span class="screen-reader-text">David's Twitter</span></a>
@@ -105,74 +170,29 @@
 					</ul>
 				</li>
 				<li class="student">
-					<img src="img/colearner-f1.jpg" class="photo" width="220px" height="220px">
-					<p class="name">David Bolt</p>
+					<img src="img/colearner-m1.jpg" class="photo" width="220px" height="220px">
+					<p class="name">Cody Turnock</p>
 					<ul class="social">
 						<li class="twitter">
-							<a href="http://twitter.com"><span class="screen-reader-text">David's Twitter</span></a>
+							<a href="http://twitter.com"><span class="screen-reader-text">Cody's Twitter</span></a>
 						</li>
 					</ul>
 				</li>
 				<li class="student">
-					<img src="img/colearner-f1.jpg" class="photo" width="220px" height="220px">
-					<p class="name">David Bolt</p>
+					<img src="img/colearner-f2.jpg" class="photo" width="220px" height="220px">
+					<p class="name">Zoe Wilson</p>
 					<ul class="social">
 						<li class="twitter">
-							<a href="http://twitter.com"><span class="screen-reader-text">David's Twitter</span></a>
+							<a href="http://twitter.com"><span class="screen-reader-text">Zoe's Twitter</span></a>
 						</li>
 					</ul>
 				</li>
 				<li class="student">
-					<img src="img/colearner-f1.jpg" class="photo" width="220px" height="220px">
-					<p class="name">David Bolt</p>
+					<img src="img/colearner-m2.jpg" class="photo" width="220px" height="220px">
+					<p class="name">Brian Workman</p>
 					<ul class="social">
 						<li class="twitter">
-							<a href="http://twitter.com"><span class="screen-reader-text">David's Twitter</span></a>
-						</li>
-					</ul>
-				</li>
-				<li class="student">
-					<img src="img/colearner-f1.jpg" class="photo" width="220px" height="220px">
-					<p class="name">David Bolt</p>
-					<ul class="social">
-						<li class="twitter">
-							<a href="http://twitter.com"><span class="screen-reader-text">David's Twitter</span></a>
-						</li>
-					</ul>
-				</li>
-				<li class="student">
-					<img src="img/colearner-f1.jpg" class="photo" width="220px" height="220px">
-					<p class="name">David Bolt</p>
-					<ul class="social">
-						<li class="twitter">
-							<a href="http://twitter.com"><span class="screen-reader-text">David's Twitter</span></a>
-						</li>
-					</ul>
-				</li>
-				<li class="student">
-					<img src="img/colearner-f1.jpg" class="photo" width="220px" height="220px">
-					<p class="name">David Bolt</p>
-					<ul class="social">
-						<li class="twitter">
-							<a href="http://twitter.com"><span class="screen-reader-text">David's Twitter</span></a>
-						</li>
-					</ul>
-				</li>
-				<li class="student">
-					<img src="img/colearner-f1.jpg" class="photo" width="220px" height="220px">
-					<p class="name">David Bolt</p>
-					<ul class="social">
-						<li class="twitter">
-							<a href="http://twitter.com"><span class="screen-reader-text">David's Twitter</span></a>
-						</li>
-					</ul>
-				</li>
-				<li class="student">
-					<img src="img/colearner-f1.jpg" class="photo" width="220px" height="220px">
-					<p class="name">David Bolt</p>
-					<ul class="social">
-						<li class="twitter">
-							<a href="http://twitter.com"><span class="screen-reader-text">David's Twitter</span></a>
+							<a href="http://twitter.com"><span class="screen-reader-text">Brian's Twitter</span></a>
 						</li>
 					</ul>
 				</li>
@@ -198,15 +218,17 @@
 		</section>
 
 		<section id="signUp" class="signUp">
-			<p class="intro_paragraph">
-				<span class="date">January 17th-April 4th</span>
-				<span class="date">Every Tue. 6pm-8:30pm</span>
-				<span class="date">Orientation: January 10th</span>
-				<span class="date">Graduation: April 11th</span>
-				<span class="size">Class size: 20 students</span>
-				<span class="cost">Cost: $800</span>
-			</p>
-			<a href="#" class="button">Sign Up</a>
+			<div class="content">
+				<p class="intro_paragraph">
+					<span class="date">January 17th-April 4th</span>
+					<span class="date">Every Tue. 6pm-8:30pm</span>
+					<span class="date">Orientation: January 10th</span>
+					<span class="date">Graduation: April 11th</span>
+					<span class="size">Class size: 20 students</span>
+					<span class="cost">Cost: $800</span>
+				</p>
+				<a href="#" class="button">Sign Up</a>
+			</div>
 
 			<footer class="site_footer">
 				<img src="img/factory-logo.png" width="100px" height="64px">

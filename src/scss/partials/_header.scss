@@ -4,16 +4,57 @@
   	@include clearfix;
 	width: 100%;
 	max-width: 1190px;
-	background-color: rgba(207, 86, 59, .9);
+	background-color: rgba(207, 86, 59, 1);
+	position: relative;
+	z-index: 300;
+		transition: height 0.3s;
 
+	.site_logo {
+		padding: 1rem;
+    	display: inline-block;
+		img {
+			width: 100px;
+			height:auto;
+		}
+	}
 	@include min-up(768px) { 
 		@include flex(wrap, space-between);
+		background-color: rgba(207, 86, 59, 0);
 		position: relative;
 		padding: 1.125rem 2.188rem;
 		position: fixed;
 		top: 0;
 		width: 98%;
 		z-index: 200;
+		.site_logo {
+			padding: 0;
+			img {
+				width: 157px;
+			}
+		}
+		&.smaller {
+			/*height:75px;*/
+			background-color: rgba(207, 86, 59, .9);
+			@include min-up(768px) { 
+				padding: .6rem 2.188rem;
+			}
+			.site_logo {
+				img {
+					width:90px;
+					line-height:75px;
+					font-size:30px;
+				}
+			}
+			.main-nav {
+				width: calc(100% - 90px);
+				.top_level {
+					margin: 0;
+					a {
+						font-size: .9rem;
+					}
+				}
+			}
+		}
 	}
 }
 
